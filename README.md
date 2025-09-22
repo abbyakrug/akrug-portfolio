@@ -1,4 +1,4 @@
-# akrug-portfolio
+# Abigail Krug CS Portfolio
 
 ## Projects
 ### Project 1 
