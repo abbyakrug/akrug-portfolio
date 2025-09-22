@@ -4,6 +4,9 @@ logo: Docs/Assets/headshot.JPG
 description: Solutions Engineer @ Deloitte
 theme: jekyll-theme-minimal
 
+sidebar:
+  - About
+
 author:
   name: Abby Krug
   github: abbyakrug
