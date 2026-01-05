@@ -1,28 +1,207 @@
-<nav class="navbar">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abigail Krug | CS Portfolio</title>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>...</p>
-</section>
+  <!-- Simple styling to start -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
 
-<section id="projects">
-  <h2>Projects</h2>
-  <p>...</p>
-</section>
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #eaeaea;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
 
-<section id="experience">
-  <h2>Experience</h2>
-  <p>...</p>
-</section>
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>...</p>
-</section>
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0077ff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      margin-bottom: 0.25rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .project {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #eaeaea;
+      font-size: 0.9rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / About -->
+  <section id="about">
+    <h1>Abigail Krug</h1>
+    <p>
+      Computer Science and Foreign Affairs graduate from the University of Virginia.
+      Incoming Solutions Engineer at Deloitte with interests in software engineering,
+      AI systems, and applied problem-solving at scale.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>
+        <em>Description coming soon.</em>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>AGS Capstone Project</h3>
+      <p>
+        <em>Description coming soon.</em>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>HR Chatbot – Nestlé</h3>
+      <ul>
+        <li>
+          Designed and built a human resources chatbot using LangChain and OpenAI LLMs.
+        </li>
+        <li>
+          Implemented Retrieval-Augmented Generation (RAG) using a FAISS vector store,
+          including data ingestion, splitting, and embedding.
+        </li>
+        <li>
+          Developed a chain that analyzes user input and dynamically augments responses
+          with relevant contextual data via prompt engineering.
+        </li>
+        <li>
+          Gained hands-on experience with RAG architecture and end-to-end LLM pipelines.
+        </li>
+      </ul>
+      <p>
+        <a href="https://github.com/abbyakrug/akrug-portfolio/blob/main/KRUG_LLM_application.ipynb" target="_blank">
+          View Source Code →
+        </a>
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>XML Parser – SmithPilot</h3>
+      <ul>
+        <li>
+          Designed and implemented a custom XML parser to analyze IRS 990 tax filings
+          for a compensation consulting firm.
+        </li>
+        <li>
+          Automated extraction and organization of financial and organizational data
+          into Excel, significantly reducing manual processing time.
+        </li>
+        <li>
+          Collaborated directly with firm partners through iterative feedback cycles
+          to deliver a production-ready solution.
+        </li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Cryptocurrency Programs</h3>
+      <p>
+        <em>Details coming soon.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>
+      <strong>University of Virginia</strong>, College of Arts & Sciences
+    </p>
+    <ul>
+      <li>Double Major: Computer Science & Foreign Affairs</li>
+      <li>GPA: 3.902</li>
+      <li>Echols Scholar, Dean’s List, Graduated with Distinction</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Solutions Engineer</strong> — Deloitte (Present)</li>
+      <li><strong>Software Engineer Intern</strong> — VISA (Summer 2024)</li>
+      <li><strong>Software Engineer Intern</strong> — Leidos (Summer 2023)</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2026 Abigail Krug ·
+    <a href="https://github.com/abbyakrug" target="_blank">GitHub</a>
+  </footer>
+
+</body>
+</html>
